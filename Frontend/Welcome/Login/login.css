@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ffe5b4, #ffcc99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+:root {
+    --background-color: #1e1616;
+    --text-color: antiquewhite;
+    --btn-background: #665d5d;
+    --btn-hover: #504848;
+    --highlight-color: darkorange;
+    --link-color: chocolate;
+}
+
+.signup {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border: 1px solid #bbb;
+    border-radius: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signup h1 {
+    color: var(--highlight-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.signup input {
+    width: 90%;
+    height: 2.5rem;
+    border: 1px solid #aaa;
+    border-radius: 0.5rem;
+    padding-left: 0.9rem;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.signup input:focus {
+    border-color: var(--highlight-color);
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(255, 140, 0, 0.3);
+}
+
+.signup button {
+    width: 90%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--btn-background);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.signup button:hover {
+    background: var(--btn-hover);
+    transform: translateY(-2px);
+}
+
+.signup p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.signup p a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.signup p a:hover {
+    color: darkorange;
+}
+
+#warning {
+    margin-top: 1rem;
+    color: tomato;
+    font-size: 0.9rem;
+}
